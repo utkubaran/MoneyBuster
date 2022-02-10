@@ -77,6 +77,8 @@
      <Compile Include="Assets\Scripts\MaskObject.cs" />
      <Compile Include="Assets\Scripts\Money.cs" />
      <Compile Include="Assets\Scripts\MoneyData.cs" />
+     <Compile Include="Assets\Scripts\MoneyStackHolder.cs" />
+     <Compile Include="Assets\Scripts\PaperShredder.cs" />
      <None Include="Assets\LeanTween\ReadMe.txt" />
      <None Include="Assets\LeanTween\License.txt" />
      <None Include="Assets\Shaders\MaskShader.shader" />
@@ -680,6 +682,15 @@
     </Reference>
     <Reference Include="UnityEngine.UI">
         <HintPath>C:\Users\baran\Desktop\Unity\Alictus_Demo\Alictus_Demo\Library\ScriptAssemblies\UnityEngine.UI.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.Recorder.Editor">
+        <HintPath>C:\Users\baran\Desktop\Unity\Alictus_Demo\Alictus_Demo\Library\ScriptAssemblies\Unity.Recorder.Editor.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.Recorder">
+        <HintPath>C:\Users\baran\Desktop\Unity\Alictus_Demo\Alictus_Demo\Library\ScriptAssemblies\Unity.Recorder.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.Recorder.Base">
+        <HintPath>C:\Users\baran\Desktop\Unity\Alictus_Demo\Alictus_Demo\Library\ScriptAssemblies\Unity.Recorder.Base.dll</HintPath>
     </Reference>
   </ItemGroup>
   <ItemGroup>

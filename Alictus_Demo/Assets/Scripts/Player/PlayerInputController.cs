@@ -53,8 +53,9 @@ public class PlayerInputController : MonoBehaviour
                 RaycastHit hit = CastRay();
                 bool isMagnifyingGlass = hit.transform.GetComponent<MagnifyingGlassController>();
                 bool isUVLight = hit.transform.GetComponent<UVLightController>();
+                bool isMoney = hit.transform.GetComponent<Money>();
 
-                if(!isMagnifyingGlass && !isUVLight) return;
+                if(!isMagnifyingGlass && !isUVLight && !isMoney) return;
 
                 selectedObject = hit.transform.gameObject;
             }

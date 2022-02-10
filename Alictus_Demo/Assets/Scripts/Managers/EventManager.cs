@@ -12,4 +12,9 @@ public static class EventManager
     public static UnityEvent OnLevelFinish = new UnityEvent();
     public static UnityEvent OnSceneFinish = new UnityEvent();
     #endregion
+
+    #region Money Events
+    public static UnityEvent OnMoneyIsValid = new UnityEvent();
+    public static UnityEvent OnMoneyIsInvalid = new UnityEvent();
+    #endregion
 }
