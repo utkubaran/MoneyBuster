@@ -31,11 +31,13 @@ public class Money : MonoBehaviour, IInteractable
 
         if (moneyValidity == MoneyData.MoneyValidity.Valid && isMoneyStack)
         {
-
+            Debug.Log("It's right match!");
+            Destroy(this.gameObject);
         }
         else if (moneyValidity == MoneyData.MoneyValidity.Invalid && isPaperShredder)
         {
-            
+            Debug.Log("It's Invalid and right match!");
+            Destroy(this.gameObject);
         }
     }
 }
