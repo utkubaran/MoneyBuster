@@ -20,6 +20,6 @@ public class MagnifyingGlassController : MonoBehaviour, IInteractable
 
     public void GoBackStation()
     {
-        transform.position = stationPos;
+        LeanTween.move(this.gameObject, stationPos, 0.5f);
     }
 }

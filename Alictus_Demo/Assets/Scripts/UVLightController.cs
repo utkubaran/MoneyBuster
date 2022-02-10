@@ -4,6 +4,12 @@ using UnityEngine;
 
 public class UVLightController : MonoBehaviour, IInteractable
 {
+    [SerializeField]
+    private GameObject UVLightFX;
+
+    [SerializeField]
+    private GameObject maskObj;
+    
     private Vector3 stationPos;
 
     private Quaternion stationRot;
@@ -18,12 +24,12 @@ public class UVLightController : MonoBehaviour, IInteractable
 
     public void OnDrag()
     {
-        transform.rotation = Quaternion.Euler(activeRotation);
+        LeanTween.rotate(this.gameObject, activeRotation, 0.25f);
     }
 
     public void GoBackStation()
     {
-        transform.position = stationPos;
-        transform.rotation = stationRot;
+        LeanTween.move(this.gameObject, stationPos, 0.5f);
+        LeanTween.rotate(this.gameObject, stationRot.eulerAngles, 0.25f);
     }
 }

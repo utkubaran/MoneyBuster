@@ -4,6 +4,9 @@ using UnityEngine;
 
 public class PlayerInputController : MonoBehaviour
 {
+    [SerializeField]
+    private float yOffset = 35f;
+
     private GameObject selectedObject;
 
     private Camera mainCam;
@@ -66,7 +69,7 @@ public class PlayerInputController : MonoBehaviour
         {
             Vector3 position = new Vector3(Input.mousePosition.x, Input.mousePosition.y, mainCam.WorldToScreenPoint(selectedObject.transform.position).z);
             Vector3 worldPosition = mainCam.ScreenToWorldPoint(position);
-            selectedObject.transform.position = new Vector3(worldPosition.x, 25f, worldPosition.z);
+            selectedObject.transform.position = new Vector3(worldPosition.x, yOffset, worldPosition.z);
             selectedObject.GetComponent<IInteractable>()?.OnDrag();
         }
     }
