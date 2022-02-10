@@ -4,7 +4,7 @@ using UnityEngine;
 
 public interface IInteractable
 {
-    public void OnInteracted();
+    public void OnDrag();
 
     public void GoBackStation();
 }

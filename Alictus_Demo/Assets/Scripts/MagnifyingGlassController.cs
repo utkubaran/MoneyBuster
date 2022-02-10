@@ -13,9 +13,9 @@ public class MagnifyingGlassController : MonoBehaviour, IInteractable
         stationPos = transform.position;
     }
 
-    public void OnInteracted()
+    public void OnDrag()
     {
-
+        return;
     }
 
     public void GoBackStation()
