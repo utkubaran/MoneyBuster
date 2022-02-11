@@ -11,6 +11,8 @@ public class Money : MonoBehaviour, IInteractable
 
     private Vector3 stationPos;
 
+    private bool isChecked;
+
     private bool isReleased;
     public bool IsReleased { set { isReleased = value; } }
 
@@ -33,6 +35,7 @@ public class Money : MonoBehaviour, IInteractable
     {
         stationPos = transform.position;
         isReleased = false;
+        isChecked = false;
     }
 
     public void OnDrag()
@@ -42,14 +45,18 @@ public class Money : MonoBehaviour, IInteractable
 
     public void GoBackStation()
     {
-        return;
-        // LeanTween.move(this.gameObject, stationPos, 0.5f);
+        if (isChecked) return;
+
+        Debug.Log("works");
+        LeanTween.move(this.gameObject, stationPos, 0.5f);
     }
 
     private void OnTriggerStay(Collider other)
     {
+        isChecked = true;
+        
         if (!isReleased) return;
-
+        
         isReleased = false;
         bool isMoneyStack = other.GetComponent<MoneyStackHolder>();
         bool isPaperShredder = other.GetComponent<PaperShredder>();

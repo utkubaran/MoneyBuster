@@ -31,12 +31,7 @@ public class PlayerInputController : MonoBehaviour
     {
         mainCam = Camera.main;
     }
-
-    void Start()
-    {
-        isPlaying = true;       // todo delete after events are enabled
-    }
-
+    
     void Update()
     {
         DragObject();
@@ -66,8 +61,8 @@ public class PlayerInputController : MonoBehaviour
             {
                 selectedObject.GetComponent<Money>().IsReleased = true;
             }
-            
-            selectedObject.GetComponent<IInteractable>().GoBackStation();
+
+            selectedObject.GetComponent<IInteractable>()?.GoBackStation();
             selectedObject = null;
         }
 

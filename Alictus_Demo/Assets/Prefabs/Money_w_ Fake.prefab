@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 2103729238}
   - component: {fileID: 3104370778384237021}
   - component: {fileID: 1821283068}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Money_w_ Fake
   m_TagString: Money
   m_Icon: {fileID: 0}
@@ -76,7 +76,7 @@ Animator:
   m_Controller: {fileID: 9100000, guid: 5f925168de6b849bdaeee9994c35cecf, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
-  m_ApplyRootMotion: 0
+  m_ApplyRootMotion: 1
   m_LinearVelocityBlending: 0
   m_WarningMessage: 
   m_HasTransformHierarchy: 1

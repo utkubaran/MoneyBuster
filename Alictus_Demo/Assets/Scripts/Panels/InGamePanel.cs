@@ -35,5 +35,13 @@ public class InGamePanel : MonoBehaviour
     {
         currentMoney += 10;
         currentMoneyText.text = currentMoney.ToString();
+        StartCoroutine(PlayMoneyCounterAnimation());
+    }
+
+    private IEnumerator PlayMoneyCounterAnimation()
+    {
+        LeanTween.scale(currentMoneyText.gameObject, Vector3.one * 1.5f, 0.5f);
+        yield return new WaitForSeconds(0.5f);
+        LeanTween.scale(currentMoneyText.gameObject, Vector3.one, 0.5f);
     }
 }

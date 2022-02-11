@@ -256,7 +256,7 @@ GameObject:
   - component: {fileID: 350086291}
   - component: {fileID: 183679525972126651}
   - component: {fileID: 1929151947}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Money_Real
   m_TagString: Money
   m_Icon: {fileID: 0}
@@ -319,7 +319,7 @@ Animator:
   m_Controller: {fileID: 9100000, guid: 5f925168de6b849bdaeee9994c35cecf, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
-  m_ApplyRootMotion: 0
+  m_ApplyRootMotion: 1
   m_LinearVelocityBlending: 0
   m_WarningMessage: 
   m_HasTransformHierarchy: 1
