@@ -47,7 +47,6 @@ public class Money : MonoBehaviour, IInteractable
     {
         if (isChecked) return;
 
-        Debug.Log("works");
         LeanTween.move(this.gameObject, stationPos, 0.5f);
     }
 

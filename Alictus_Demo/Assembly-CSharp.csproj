@@ -64,7 +64,6 @@
      <Compile Include="Assets\LeanTween\Examples\Scripts\PathSplineTrack.cs" />
      <Compile Include="Assets\Scripts\Money\MoneyData.cs" />
      <Compile Include="Assets\LeanTween\Framework\LeanTest.cs" />
-     <Compile Include="Assets\Scripts\MaskObject.cs" />
      <Compile Include="Assets\LeanTween\Examples\Scripts\TestingZLegacy.cs" />
      <Compile Include="Assets\LeanTween\Examples\Scripts\PathSpline2d.cs" />
      <Compile Include="Assets\Scripts\Money\Money.cs" />
