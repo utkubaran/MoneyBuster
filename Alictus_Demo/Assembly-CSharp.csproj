@@ -82,6 +82,7 @@
      <Compile Include="Assets\Scripts\Paper Shredder\PaperShredderAnimationController.cs" />
      <Compile Include="Assets\Scripts\Money\MoneyAnimationController.cs" />
      <Compile Include="Assets\Scripts\Money Stack Holder\MoneyStackAnimationController.cs" />
+     <Compile Include="Assets\Scripts\Managers\LevelProgressTracker.cs" />
      <None Include="Assets\LeanTween\ReadMe.txt" />
      <None Include="Assets\LeanTween\License.txt" />
      <None Include="Assets\Shaders\MaskShader.shader" />

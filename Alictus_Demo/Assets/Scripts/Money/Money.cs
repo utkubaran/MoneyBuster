@@ -50,7 +50,7 @@ public class Money : MonoBehaviour, IInteractable
 
             if (moneyValidity == MoneyData.MoneyValidity.Invalid)
             {
-                // todo add event
+                EventManager.OnCorrectCheck?.Invoke();
             }
 
             PlaceToShredder();
@@ -61,19 +61,22 @@ public class Money : MonoBehaviour, IInteractable
 
             if (moneyValidity == MoneyData.MoneyValidity.Valid)
             {
-                // todo add event
+                EventManager.OnCorrectCheck?.Invoke();
             }
 
             AddToStack();
         }
+
+        EventManager.OnCheckCompleted?.Invoke();
     }
 
     private void PlaceToShredder()
     {
         LeanTween.move(this.gameObject, new Vector3(-35f, 7.5f, -9f), 0.25f);
-        LeanTween.rotate(this.gameObject, new Vector3(0f, 90f, 0f), 0.25f);
+        LeanTween.rotate(this.gameObject, new Vector3(0f, -90f, 0f), 0.25f);
         GetComponent<Collider>().enabled = false;
         moneyAnimationController.PlayShredAnimation();
+        Destroy(this.gameObject, 1.5f);
     }
 
     private void AddToStack()

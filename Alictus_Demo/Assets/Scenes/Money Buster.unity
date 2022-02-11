@@ -347,6 +347,49 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 10
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &859767126
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 859767127}
+  - component: {fileID: 859767128}
+  m_Layer: 0
+  m_Name: Managers
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &859767127
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 859767126}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 15
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &859767128
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 859767126}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: edc564ab39fd9ad4b80e571ada2f2d36, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &993032812 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 6007741027380903638, guid: 3dae4e6e9ef703a4098502d9a5f2878e, type: 3}
@@ -805,24 +848,12 @@ PrefabInstance:
       value: Money_w/ Fake
       objectReference: {fileID: 0}
     - target: {fileID: 935659420473950937, guid: 835fc1554493d25458518380357fc5ed, type: 3}
-      propertyPath: m_IsActive
-      value: 0
+      propertyPath: m_Layer
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 935659420473950938, guid: 835fc1554493d25458518380357fc5ed, type: 3}
       propertyPath: m_RootOrder
       value: 13
-      objectReference: {fileID: 0}
-    - target: {fileID: 935659420473950938, guid: 835fc1554493d25458518380357fc5ed, type: 3}
-      propertyPath: m_LocalScale.x
-      value: 10
-      objectReference: {fileID: 0}
-    - target: {fileID: 935659420473950938, guid: 835fc1554493d25458518380357fc5ed, type: 3}
-      propertyPath: m_LocalScale.y
-      value: 10
-      objectReference: {fileID: 0}
-    - target: {fileID: 935659420473950938, guid: 835fc1554493d25458518380357fc5ed, type: 3}
-      propertyPath: m_LocalScale.z
-      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 935659420473950938, guid: 835fc1554493d25458518380357fc5ed, type: 3}
       propertyPath: m_LocalPosition.x
@@ -864,6 +895,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 3104370778384237021, guid: 835fc1554493d25458518380357fc5ed, type: 3}
+      propertyPath: m_ApplyRootMotion
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 835fc1554493d25458518380357fc5ed, type: 3}
 --- !u!1001 &1327361899683453578
@@ -876,18 +911,6 @@ PrefabInstance:
     - target: {fileID: 1327361898724098968, guid: 8b41c754c0227fc4492f8240dd0a6b0a, type: 3}
       propertyPath: m_RootOrder
       value: 12
-      objectReference: {fileID: 0}
-    - target: {fileID: 1327361898724098968, guid: 8b41c754c0227fc4492f8240dd0a6b0a, type: 3}
-      propertyPath: m_LocalScale.x
-      value: 10
-      objectReference: {fileID: 0}
-    - target: {fileID: 1327361898724098968, guid: 8b41c754c0227fc4492f8240dd0a6b0a, type: 3}
-      propertyPath: m_LocalScale.y
-      value: 10
-      objectReference: {fileID: 0}
-    - target: {fileID: 1327361898724098968, guid: 8b41c754c0227fc4492f8240dd0a6b0a, type: 3}
-      propertyPath: m_LocalScale.z
-      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 1327361898724098968, guid: 8b41c754c0227fc4492f8240dd0a6b0a, type: 3}
       propertyPath: m_LocalPosition.x
@@ -934,8 +957,12 @@ PrefabInstance:
       value: Money_w/ Doodle
       objectReference: {fileID: 0}
     - target: {fileID: 1327361898724098971, guid: 8b41c754c0227fc4492f8240dd0a6b0a, type: 3}
-      propertyPath: m_IsActive
-      value: 0
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 3588734854702583800, guid: 8b41c754c0227fc4492f8240dd0a6b0a, type: 3}
+      propertyPath: m_ApplyRootMotion
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8b41c754c0227fc4492f8240dd0a6b0a, type: 3}
@@ -946,29 +973,21 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 183679525972126651, guid: 07f6866a358ad7245a26718063f3a212, type: 3}
+      propertyPath: m_ApplyRootMotion
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 2597139183792833620, guid: 07f6866a358ad7245a26718063f3a212, type: 3}
       propertyPath: m_Name
       value: Money_Real
       objectReference: {fileID: 0}
     - target: {fileID: 2597139183792833620, guid: 07f6866a358ad7245a26718063f3a212, type: 3}
-      propertyPath: m_IsActive
-      value: 0
+      propertyPath: m_Layer
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 2597139183792833621, guid: 07f6866a358ad7245a26718063f3a212, type: 3}
       propertyPath: m_RootOrder
       value: 11
-      objectReference: {fileID: 0}
-    - target: {fileID: 2597139183792833621, guid: 07f6866a358ad7245a26718063f3a212, type: 3}
-      propertyPath: m_LocalScale.x
-      value: 10
-      objectReference: {fileID: 0}
-    - target: {fileID: 2597139183792833621, guid: 07f6866a358ad7245a26718063f3a212, type: 3}
-      propertyPath: m_LocalScale.y
-      value: 10
-      objectReference: {fileID: 0}
-    - target: {fileID: 2597139183792833621, guid: 07f6866a358ad7245a26718063f3a212, type: 3}
-      propertyPath: m_LocalScale.z
-      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 2597139183792833621, guid: 07f6866a358ad7245a26718063f3a212, type: 3}
       propertyPath: m_LocalPosition.x
@@ -976,7 +995,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2597139183792833621, guid: 07f6866a358ad7245a26718063f3a212, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0
+      value: 5.6
       objectReference: {fileID: 0}
     - target: {fileID: 2597139183792833621, guid: 07f6866a358ad7245a26718063f3a212, type: 3}
       propertyPath: m_LocalPosition.z
@@ -1181,6 +1200,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Paper Shredder
       objectReference: {fileID: 0}
+    - target: {fileID: 5909383212743217669, guid: 2e2ca08f2af110c4894eb8b2d5e087d7, type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2e2ca08f2af110c4894eb8b2d5e087d7, type: 3}
 --- !u!1001 &6007741028002710714
@@ -1238,6 +1261,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Money Stack Holder
       objectReference: {fileID: 0}
+    - target: {fileID: 6007741027380903638, guid: 3dae4e6e9ef703a4098502d9a5f2878e, type: 3}
+      propertyPath: m_Layer
+      value: 9
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3dae4e6e9ef703a4098502d9a5f2878e, type: 3}
 --- !u!114 &6198848313259311753
@@ -1261,7 +1288,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6198848313259311759}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: -0.01, z: -45}
+  m_LocalPosition: {x: 0, y: 0, z: -45}
   m_LocalScale: {x: 10, y: 10, z: 10}
   m_Children:
   - {fileID: 6198848314509478983}
@@ -1289,7 +1316,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &6198848313259311760
 MonoBehaviour:
   m_ObjectHideFlags: 0

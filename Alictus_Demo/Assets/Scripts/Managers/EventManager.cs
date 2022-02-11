@@ -16,5 +16,7 @@ public static class EventManager
     #region Money Events
     public static UnityEvent OnMoneyInShredder = new UnityEvent();
     public static UnityEvent OnMoneyInStack = new UnityEvent();
+    public static UnityEvent OnCheckCompleted = new UnityEvent();
+    public static UnityEvent OnCorrectCheck = new UnityEvent();
     #endregion
 }
