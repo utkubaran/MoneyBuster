@@ -19,4 +19,9 @@ public static class EventManager
     public static UnityEvent OnCheckCompleted = new UnityEvent();
     public static UnityEvent OnCorrectCheck = new UnityEvent();
     #endregion
+
+    #region Button Events
+    public static UnityEvent OnTapToPlayButtonPressed = new UnityEvent();
+    public static UnityEvent OnNextLevelButtonPressed = new UnityEvent();
+    #endregion
 }

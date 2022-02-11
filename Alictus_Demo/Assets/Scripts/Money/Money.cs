@@ -14,6 +14,16 @@ public class Money : MonoBehaviour, IInteractable
     private bool isReleased;
     public bool IsReleased { set { isReleased = value; } }
 
+    private void OnEnable()
+    {
+        EventManager.OnLevelFinish.AddListener( () => this.gameObject.SetActive(false) );
+    }
+
+    private void OnDisable()
+    {
+        EventManager.OnLevelFinish.RemoveListener( () => this.gameObject.SetActive(false) );
+    }
+
     private void Awake()
     {
         moneyAnimationController = GetComponent<MoneyAnimationController>();
