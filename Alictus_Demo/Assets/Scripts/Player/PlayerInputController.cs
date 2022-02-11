@@ -62,8 +62,16 @@ public class PlayerInputController : MonoBehaviour
         }
         else if (Input.GetMouseButtonUp(0) && selectedObject != null)
         {
-            selectedObject.GetComponent<IInteractable>().GoBackStation();
-            selectedObject = null;
+            if (selectedObject.GetComponent<Money>())
+            {
+                selectedObject.GetComponent<Money>().IsReleased = true;
+                selectedObject = null;
+            }
+            else
+            {
+                selectedObject.GetComponent<IInteractable>().GoBackStation();
+                selectedObject = null;
+            }
         }
 
         if (selectedObject != null)
